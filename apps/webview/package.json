@@ -1,16 +1,12 @@
 {
   "name": "webview",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "test": "echo 'No tests in this package'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@tauri-apps/api": "^2.0.3",
     "@tauri-apps/plugin-shell": "^2.0.1",

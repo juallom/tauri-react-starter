@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "tauri-starter",
+  "productName": "tauri-react-starter",
   "version": "0.1.0",
-  "identifier": "com.tauri-starter.app",
+  "identifier": "com.tauri-react-starter.app",
   "build": {
     "devUrl": "http://localhost:1420",
     "frontendDist": "dist"
