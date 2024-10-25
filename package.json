@@ -12,6 +12,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "test": "turbo test",
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
     "postinstall": "lefthook install; cargo install --path apps/system",

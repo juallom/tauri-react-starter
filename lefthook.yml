@@ -1,19 +1,12 @@
-# EXAMPLE USAGE:
-#
 #   Refer for explanation to following link:
 #   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
-#
-# pre-push:
-#   commands:
-#     packages-audit:
-#       tags: frontend security
-#       run: yarn audit
-#     gems-audit:
-#       tags: backend security
-#       run: bundle audit
+
+ pre-push:
+   commands:
+     test:
+       run: turbo run test --affected
 
  pre-commit:
    commands:
      lint:
-       glob: "*.{js,ts,jsx,tsx,cjs,mjs,json,css,scss,rd,html,svg,yaml,yml}"
        run: ./node_modules/.bin/biome check . --changed --no-errors-on-unmatched

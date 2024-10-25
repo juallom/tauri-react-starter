@@ -16,6 +16,11 @@
       "cache": false,
       "persistent": true
     },
+    "test": {
+      "cache": true,
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["coverage/**"]
+    },
     "//#tauri-dev": {
       "persistent": true
     },
