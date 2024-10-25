@@ -1,14 +1,14 @@
-import { invoke } from "@tauri-apps/api/core";
-import { useState } from "react";
-import "./App.css";
+import { invoke } from '@tauri-apps/api/core';
+import { useState } from 'react';
+import './App.css';
 
 function App() {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+  const [greetMsg, setGreetMsg] = useState('');
+  const [name, setName] = useState('');
 
   async function greet() {
     // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    setGreetMsg(await invoke("greet", { name }));
+    setGreetMsg(await invoke('greet', { name }));
   }
 
   return (
@@ -44,7 +44,7 @@ function App() {
           rel="noreferrer"
         >
           <img
-            src={"/assets/react.svg"}
+            src={'/assets/react.svg'}
             className="logo react"
             alt="React logo"
           />

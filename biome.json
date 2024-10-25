@@ -30,6 +30,7 @@
   },
   "javascript": {
     "formatter": {
+      "quoteStyle": "single",
       "arrowParentheses": "always",
       "jsxQuoteStyle": "double",
       "semicolons": "always",
