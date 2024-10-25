@@ -38,3 +38,7 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Tauri
+apps/system/target/
+apps/system/gen/schemas/

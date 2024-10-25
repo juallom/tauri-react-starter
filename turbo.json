@@ -5,14 +5,19 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
-    "lint": {
-      "dependsOn": ["^lint"]
+      "outputs": ["dist/**"]
     },
     "dev": {
       "cache": false,
       "persistent": true
-    }
+    },
+    "//#tauri-dev": {
+      "persistent": true
+    },
+    "//#tauri-build": {
+      "dependsOn": ["webview#build"]
+    },
+    "//#lint": {},
+    "//#lint:fix": {}
   }
 }

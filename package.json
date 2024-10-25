@@ -6,10 +6,14 @@
     "dev": "turbo dev",
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
-    "postinstall": "lefthook install"
+    "postinstall": "lefthook install; cargo install --path apps/system",
+    "tauri-dev": "concurrently \"pnpm run dev -F webview\" \"tauri dev --config=apps/system/tauri.conf.json\"",
+    "tauri-build": "tauri build --config=apps/system/tauri.conf.json"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@tauri-apps/cli": "^2.0.4",
+    "concurrently": "^9.0.1",
     "lefthook": "^1.8.1",
     "turbo": "^2.2.3",
     "typescript": "5.4.5"
@@ -18,8 +22,5 @@
   "engines": {
     "node": ">=18"
   },
-  "workspaces": [
-    "apps",
-    "packages"
-  ]
+  "workspaces": ["apps"]
 }

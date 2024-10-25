@@ -7,7 +7,8 @@
     "defaultBranch": "main"
   },
   "files": {
-    "ignoreUnknown": true
+    "ignoreUnknown": true,
+    "ignore": ["apps/system"]
   },
   "formatter": {
     "enabled": true,
