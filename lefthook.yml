@@ -4,7 +4,7 @@
  pre-push:
    commands:
      test:
-       run: turbo run test --affected
+       run: ./node_modules/.bin/turbo run test --affected
 
  pre-commit:
    commands:
